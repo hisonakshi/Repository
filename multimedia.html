@@ -19,8 +19,33 @@
     th {
       background-color: lightgray;
     }
+    .login{
+      text-align: center;
+    }
+
+    
   </style>
 <body>
+
+
+
+
+  <form>
+    <h2 class="login">Login Form</h2>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" placeholder="Enter your username">
+    <br>
+
+    <label for="password">Password:</label>    <!-- Use id=password in in for ="password" -->
+    <input type="password" name="password" id="password" placeholder="Enter your password">
+    <br>
+
+    <button class="button" type="submit">Login</button>
+  </form>
+
+
+
+
     <h1>Video tag</h1>
     <video width="600" height="400" controls>
         <source src="video.mp4" type="video/mp4">
@@ -45,20 +70,23 @@
         <table><h2>Student Marks Table</h2>
 
         <table>
+        <thead>
           <tr>
             <th>Name</th>
             <th>Roll No</th>
             <th>Subject</th>
             <th>Marks</th>
           </tr>
+          </thead>
+          <tbody>
           <tr>
-            <td>Rahul</td>
+            <td>Amit</td>
             <td>1</td>
             <td>Math</td>
             <td>85</td>
           </tr>
           <tr>
-            <td>Sneha</td>
+            <td>Riya</td>
             <td>2</td>
             <td>Science</td>
             <td>90</td>
@@ -69,7 +97,18 @@
             <td>English</td>
             <td>78</td>
           </tr>
+       </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Total Marks</td>
+              <td>253</td>
+            </tr>
+          </tfoot>
         </table>
+
+
+
 
 
     
