@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Room Booking Request Form</title>
+    <title>Event Reservation Form</title>
 </head>
 <body>
     <center>
-    <h1>Hotel Room Booking Form</h1>
+    <h1>Event Venue Reservation</h1>
     <form>
         <table>
             <tr>
-                <td>Guest Name:</td>
-                <td><input type="text" name="guestName" required></td>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullName" required></td>
             </tr>
             <tr>
-                <td>Email Address:</td>
-                <td><input type="email" name="guestEmail" required></td>
+                <td>Email ID:</td>
+                <td><input type="email" name="emailId" required></td>
             </tr>
             <tr>
-                <td>Contact Number:</td>
-                <td><input type="tel" name="phone" required></td>
+                <td>Mobile Number:</td>
+                <td><input type="tel" name="mobile" required></td>
             </tr>
             <tr>
-                <td>Arrival Date:</td>
-                <td><input type="date" name="arrivalDate" placeholder="dd-mm-yyyy" required></td>
+                <td>Check-In Date:</td>
+                <td><input type="date" name="checkIn" required></td>
             </tr>
             <tr>
-                <td>Departure Date:</td>
-                <td><input type="date" name="departureDate" placeholder="dd-mm-yyyy" required></td>
+                <td>Check-Out Date:</td>
+                <td><input type="date" name="checkOut" required></td>
             </tr>
             <tr>
-                <td>Type of Room:</td>
+                <td>Venue Type:</td>
                 <td>
-                    <select name="roomKind">
-                        <option value="single">Single Suite</option>
-                        <option value="double">Double Suite</option>
-                        <option value="premium">Premium Suite</option>
+                    <select name="venueType">
+                        <option value="hall">Banquet Hall</option>
+                        <option value="conference">Conference Room</option>
+                        <option value="outdoor">Outdoor Area</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td>Total Occupants:</td>
-                <td><input type="number" name="occupants" required></td>
+                <td>Number of Guests:</td>
+                <td><input type="number" name="guests" required></td>
             </tr>
             <tr>
-                <td>Speacial Request:</td>
+                <td>Additional Notes:</td>
                 <td>
-                    <textarea name="extraWishes" rows="5" cols="30"></textarea>
+                    <textarea name="notes" rows="5" cols="30"></textarea>
                 </td>
             </tr>
             <br>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="Reserve Now">
-                    <input type="reset" value="Clear Form">
+                    <input type="submit" value="Book Venue">
+                    <input type="reset" value="Reset Form">
                 </td>
             </tr>
         </table>

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learner Sign-Up Portal</title>
+    <title>Club Membership Signup</title>
 </head>
 <body>
     <br><br>
 <center>
-    <h1>Student Registation Form</h1>
+    <h1>New Member Registration</h1>
     <hr>
 </center>
 
     <form>
         <table>
             <tr>
-                <td>Full Name:</td>
-                <td><input type="text" name="applicantName" placeholder="Enter your name"></td>
+                <td>Name of Applicant:</td>
+                <td><input type="text" name="memberName" placeholder="Your name here"></td>
             </tr>
             <tr>
-                <td>Email Address:</td>
-                <td><input type="email" name="applicantEmail" placeholder="Enter email address"></td>
+                <td>Email for Contact:</td>
+                <td><input type="email" name="memberEmail" placeholder="example@mail.com"></td>
             </tr>
             <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password" placeholder="Enter password"></td>
+                <td>Set a Passcode:</td>
+                <td><input type="password" name="memberPass" placeholder="Create passcode"></td>
             </tr>
             <tr>
-                <td>Gender:</td>
+                <td>Identify as:</td>
                 <td>
                     <input type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
@@ -33,29 +33,29 @@
                 </td>
             </tr>
             <tr>
-                <td>Course:</td>
+                <td>Membership Level:</td>
                 <td>
-                    <select name="program">
-                        <option value="">-- Select course --</option>
-                        <option value="science">B.tech</option>
-                        <option value="arts">Bsc</option>
-                        <option value="engineering">M.tech</option>
+                    <select name="membership">
+                        <option value="">-- Select Level --</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="vip">VIP</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td>Contact Number:</td>
-                <td><input type="tel" name="contact" placeholder="Enter phone number"></td>
+                <td>Phone Contact:</td>
+                <td><input type="tel" name="memberPhone" placeholder="Contact number"></td>
             </tr>
             <tr>
-                <td>Address:</td>
+                <td>Home Address:</td>
                 <td>
-                    <textarea name="location" placeholder="Enter your address" rows="3"></textarea>
+                    <textarea name="homeAddr" placeholder="Enter address" rows="3"></textarea>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Apply">
                     <input type="reset" value="Clear">
                 </td>
             </tr>
@@ -64,9 +64,9 @@
     <br>
     <hr>
 
-    <center>
-    <p>&copy; 2025 Student Registration Portal</p>
-    </center>
+<center>
+    <p>&copy; 2025 Club Membership Portal</p>
+</center>
 
 </body>
 </html>
