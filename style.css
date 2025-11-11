@@ -1,1 +1,22 @@
-body{color:black}
+.heading{
+    text-align:center;
+}
+
+body{
+    background-color:bisque;
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.865);
+    line-height:30px;
+}
+#intro{
+    color:rgb(37, 94, 124);
+}
+
+div{
+    height:500px;
+    width:500px;
+    border:1px solid black;
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80");
+    background-size: cover;
+}
+
