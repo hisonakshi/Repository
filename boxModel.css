@@ -1,0 +1,10 @@
+
+.box{
+    height:250px;
+    width:300px;
+    background-color:aquamarine;
+    border:10px solid black;
+    margin-top:40;
+    padding: 35px;
+    font-size:20px;
+}
