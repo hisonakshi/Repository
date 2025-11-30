@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: Arial;
 }
 
-/* Header = BLOCK element */
 .site-header {
     background: #222;
     color: #fff;
@@ -14,32 +13,27 @@
     text-align: center;
 }
 
-/* Nav-Bar = BLOCK */
 .nav-bar {
     background: #0066cc;
     padding: 10px 0;
 }
 
-/* Menu UL = BLOCK */
 .menu {
     list-style: none;
     text-align: center;
 }
 
-/* Menu item = INLINE-BLOCK (for horizontal menu) */
 .menu-item {
-    display: inline-block;   /* Inline-block used here */
+    display: inline-block;
     margin: 0 15px;
 }
 
-/* Links = INLINE (default) */
 .menu-item a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
 
-/* Example content area */
 .content-box {
     width: 90%;
     background: #f2f2f2;
@@ -48,14 +42,12 @@
     border: 1px solid #ccc;
 }
 
-/* Float + Clear Example */
 .content-box h2 {
     float: left;
     padding: 10px;
 }
 
-/* Clear fixes the float issue */
 .content-box p {
-    clear: both;   /* <--- CLEAR used */
+    clear: both;
     margin-top: 10px;
 }
