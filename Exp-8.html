@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        /* Flexbox Container for Cards */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        /* Individual Card Styling */
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            padding: 25px;
+            border: 2px solid #000;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+        }
+
+        /* Avatar Circle */
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .avatar-blue {
+            background: linear-gradient(135deg, #0099ff, #0066cc);
+        }
+
+        .avatar-green {
+            background: linear-gradient(135deg, #00cc99, #009973);
+        }
+
+        .avatar-orange {
+            background: linear-gradient(135deg, #ff9933, #ff6600);
+        }
+
+        /* Card Text */
+        .student-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .student-info {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Outcome Section */
+        .outcome-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .outcome-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .outcome-section ul {
+            list-style-position: inside;
+            color: #555;
+            line-height: 2;
+        }
+
+        .outcome-section li {
+            margin-bottom: 8px;
+        }
+
+        .outcome-section strong {
+            color: #0066cc;
+        }
+
+        /* Responsive for column layout */
+        .flex-column .cards-container {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Profile Cards</h1>
+        
+        <div id="cardsWrapper" class="cards-container">
+            <div class="profile-card">
+                <div class="avatar avatar-blue">SK</div>
+                <div class="student-name">Sonakshi</div>
+                <div class="student-info">
+                    B.Tech - CSE<br>
+                    Roll No: 2024001<br>
+                    3rd Year
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="avatar avatar-green">AP</div>
+                <div class="student-name">Amit shah</div>
+                <div class="student-info">
+                    B.Tech - IT<br>
+                    Roll No: 2024002<br>
+                    2nd Year
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="avatar avatar-orange">PM</div>
+                <div class="student-name">Priya gupta</div>
+                <div class="student-info">
+                    B.Tech - ECE<br>
+                    Roll No: 2024003<br>
+                    4th Year
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
